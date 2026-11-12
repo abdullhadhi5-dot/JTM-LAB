@@ -1,7 +1,13 @@
 import matplotlib.pyplot as plt
-students = ["hadhi","rifa","jasim","mayooka"]
-mark = [50,60,40,50]
-plt.bar(students,mark)
+n=int(input("how many students ?"))
+students=[]
+marks=[]
+for i in range(n):
+    name=input("enter a name :")
+    mark=int(input("enter student mark :"))
+    students.append(name)
+    marks.append(mark)
+plt.bar(students,marks)
 plt.title("student marks")
 plt.xlabel("student names")
 plt.ylabel("mark")
